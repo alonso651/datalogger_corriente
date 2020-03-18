@@ -48,9 +48,6 @@ void setup() {
   setup_wifi();
   client.setServer(mqtt_server, atoi(mqtt_port));
   client.setCallback(callback);
-  dht.setup(D4, DHTesp::DHT11);
-  Wire.begin();
-  lightMeter.begin();
 }
 void loop() {
   if (reset)
