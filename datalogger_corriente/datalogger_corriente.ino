@@ -4,6 +4,9 @@ Conexiones:
   
   FACTORY RESET
     INTERRUPCION -> GPIO14
+
+  Sensor de Corriente ACS712 -> A0
+
 */
 
 //LIBRERIAS
@@ -16,10 +19,7 @@ Conexiones:
 #include <WiFiUdp.h>
 #include <ArduinoOTA.h>
 #include <PubSubClient.h>
-#include <DHTesp.h>
 #include <ArduinoJson.h>
-#include <Wire.h>
-#include <BH1750.h>
 
 
 //OBJETOS
